@@ -14,10 +14,11 @@ const Header = props => {
     fontSize: "1.25em",
   };
 
+  const memeURL = "https://www.testbytes.net/wp-content/uploads/2019/06/Untitled-41-300x294.png";
+
   return (
     <header>
       <nav style={navStyle}>
-      <img src="https://www.testbytes.net/wp-content/uploads/2019/06/Untitled-41-300x294.png" alt="programmer meme pointing at semi-colon" width={100} />
         <Link to="/">
           <div className="title is-4">HOME</div>
         </Link>
@@ -26,6 +27,9 @@ const Header = props => {
         </Link>
         <Link to="/projects">
           <div className="title is-4">PROJECTS</div>
+        </Link>
+        <Link to="/meme">
+          <img src={memeURL} alt="programmer meme pointing at semi-colon" width={100} />
         </Link>
       </nav>
     </header>
