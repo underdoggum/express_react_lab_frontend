@@ -22,7 +22,9 @@ const Projects = props => {
       return (
         <div>
           <h1>{project.name}</h1>
-          <img src={project.img} alt={`screenshot of ${project.name}`} />
+          {console.log(project.image)}
+          <img src={project.image} alt={`screenshot of ${project.name}`} width={400} />
+          <br />
           <a href={project.git}>
             <button>Github</button>
           </a>
