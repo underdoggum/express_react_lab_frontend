@@ -19,16 +19,18 @@ const Projects = props => {
   // function that returns JSX needed once data is fetched
   const loaded = () => {
     return projects.map(project => {
-      <div>
-        <h1>{project.name}</h1>
-        <img src={project.img} alt={`screenshot of ${project.name}`} />
-        <a href={project.git}>
-          <button>Github</button>
-        </a>
-        <a href={project.live}>
-          <button>Live site</button>
-        </a>
-      </div>
+      return (
+        <div>
+          <h1>{project.name}</h1>
+          <img src={project.img} alt={`screenshot of ${project.name}`} />
+          <a href={project.git}>
+            <button>Github</button>
+          </a>
+          <a href={project.live}>
+            <button>Live site</button>
+          </a>
+        </div>
+      )
     })
   }
 
