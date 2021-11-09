@@ -11,3 +11,17 @@
   height: 4em;
   transform: translate(-50%, 0);
 }
+
+.thing {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color 0.5s, color 0.25s, border-radius 1s;
+}
+
+.thing:hover {
+  color: white;
+  background-color: black;
+  border-radius: 100%;
+}
