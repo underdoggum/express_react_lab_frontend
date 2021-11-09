@@ -1,4 +1,5 @@
 import './App.css';
+import "bulma/css/bulma.min.css";
 import { Route, Routes } from "react-router-dom";
 // import components
 import Header from './components/Header';

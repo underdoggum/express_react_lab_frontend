@@ -22,7 +22,9 @@ const About = props => {
     return (
       <div>
         <h2>{about.name}</h2>
-        <h3>{about.email}</h3>
+        <img src={about.headshot} alt={`headshot of ${about.name}`} width={400} />
+        <h3>Email: <a href={`mailto:${about.email}`}>{about.email}</a></h3>
+        <h3>How {about.name.split(" ")[0]} came to be:</h3>
         <p>{about.bio}</p>
       </div>
     )

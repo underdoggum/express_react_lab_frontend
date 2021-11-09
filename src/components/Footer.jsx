@@ -1,6 +1,8 @@
 const Footer = props => {
   return (
-    <h1>Footer</h1>
+    <div style={{color: "gray"}} className="Footer">
+      <p>Nathan Noack's Portfolio | &copy;2021 Atlanta, GA | All Rights Reserved</p>
+    </div>
   )
 }
 

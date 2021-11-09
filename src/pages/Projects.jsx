@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Button } from "react-bulma-components";
 
 
 const Projects = props => {
@@ -20,16 +21,17 @@ const Projects = props => {
   const loaded = () => {
     return projects.map(project => {
       return (
-        <div>
-          <h1>{project.name}</h1>
-          {console.log(project.image)}
-          <img src={project.image} alt={`screenshot of ${project.name}`} width={400} />
+        <div style={{marginTop: "3em"}}>
+          <h1 className="title is-3">{project.name}</h1>
+          <a href={project.live}>
+            <img src={project.image} alt={`screenshot of ${project.name}`} width={400} />
+          </a>
           <br />
           <a href={project.git}>
-            <button>Github</button>
+            <Button mt="3" color="link is-light">Github</Button>
           </a>
           <a href={project.live}>
-            <button>Live site</button>
+            <Button mt="3" ml="5" color="link">Live Site</Button>
           </a>
         </div>
       )

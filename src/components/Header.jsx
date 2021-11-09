@@ -6,15 +6,16 @@ const Header = props => {
   const navStyle = {
     display: "flex",
     justifyContent: "space-around",
-    border: "3px solid black",
-    padding: "8px",
-    width: "90%",
-    margin: "auto"
+    backgroundColor: "black",
+    padding: "0.75em",
+    width: "95%",
+    margin: "auto",
+    fontSize: "1.25em",
+    color: "lightblue"
   };
 
   return (
     <header>
-      <h1>My Portfolio Page</h1>
       <nav style={navStyle}>
         <Link to="/">
           <div>HOME</div>
